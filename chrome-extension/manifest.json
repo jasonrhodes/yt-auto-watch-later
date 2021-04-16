@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Watch Later",
+  "description": "Forces YouTube '+ Save' button to auto-save to your watch later list, saving you hours of clicks.",
+  "version": "1.0",
+  "author": "Jason Rhodes",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
